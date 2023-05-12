@@ -20,3 +20,30 @@ PATH: C:\\xampp\\mysql\\bin\\mysql.exe -u root -P 8889
 -SHOW tables;
 -DESCRIBE `courses`;
 -SELECT `cfu` FROM `courses` WHERE `cfu` > 10;
+
+## task n.3 "Selezionare tutti gli studenti che hanno più di 30 anni"
+
+-SHOW databases;
+-USE `91_university`;
+-SHOW tables;
+-SELECT * FROM `students` WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) > 30;
+
+## task n.4 "Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)"
+
+-SHOW databases;
+-USE `91_university`;
+-SHOW tables;
+-SELECT * from `courses`;
+-SELECT * from `courses` WHERE PERIOD = 'I semestre' AND YEAR = '1';
+
+## task n.5 "Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21)"
+
+-SHOW databases;
+-USE `91_university`;
+-SHOW tables;
+-SELECT * FROM `exams`;
+-SELECT * FROM `exams` WHERE DATE = "2020-06-20" AND HOUR >= "14:00"
+
+6. Selezionare tutti i corsi di laurea magistrale (38)
+7. Da quanti dipartimenti è composta l'università? (12)"
+8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)

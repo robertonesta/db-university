@@ -42,8 +42,28 @@ PATH: C:\\xampp\\mysql\\bin\\mysql.exe -u root -P 8889
 -USE `91_university`;
 -SHOW tables;
 -SELECT * FROM `exams`;
--SELECT * FROM `exams` WHERE DATE = "2020-06-20" AND HOUR >= "14:00"
+-SELECT * FROM `exams` WHERE DATE = "2020-06-20" AND HOUR >= "14:00";
 
-6. Selezionare tutti i corsi di laurea magistrale (38)
-7. Da quanti dipartimenti è composta l'università? (12)"
-8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
+## task n.6 "Selezionare tutti i corsi di laurea magistrale (38)"
+
+-SHOW databases;
+-USE `91_university`;
+-SHOW tables;
+-SELECT * from `degrees`;
+-SELECT * from `degrees` WHERE `LEVEL` = "MAGISTRALE";
+
+## task n.7 "Da quanti dipartimenti è composta l'università? (12)"
+
+-SHOW databases;
+-USE `91_university`;
+-SHOW tables;
+-DESCRIBE `departments`;
+-SELECT `ID` FROM `departments`;
+
+## task n.8 "Quanti sono gli insegnanti che non hanno un numero di telefono? (50)"
+
+-SHOW databases;
+-USE `91_university`;
+-SHOW tables;
+-DESCRIBE `teachers`;
+-SELECT COUNT(*) FROM `teachers` WHERE phone IS NULL;

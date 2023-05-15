@@ -3,7 +3,6 @@ PATH: C:\\xampp\\mysql\\bin\\mysql.exe -u root -P 8889
 EX - QUERY CON JOIN
 
 ## 1. Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
-
 ## 2. Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento di Neuroscienze
 ## 3. Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
 ## 4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e nome
@@ -14,6 +13,8 @@ EX - QUERY CON JOIN
 EX - QUERY CON GROUP BY
 
 ## 1. Contare quanti iscritti ci sono stati ogni anno
+
+
 ## 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 ## 3. Calcolare la media dei voti di ogni appello d'esame
 ## 4. Contare quanti corsi di laurea ci sono per ogni dipartimento

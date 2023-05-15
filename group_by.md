@@ -25,4 +25,4 @@ GROUP BY `exam_student`.`exam_id`
 SELECT COUNT(`degrees`.`id`), `departments`.`name`
 FROM `degrees`
 JOIN `departments` ON `degrees`.`department_id` = `departments`.`id`
-GROUP BY `degrees`.`department_id``
+GROUP BY `degrees`.`department_id`

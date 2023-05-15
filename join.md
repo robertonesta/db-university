@@ -40,7 +40,7 @@ from `course_teacher`
 JOIN `courses` ON `course_teacher`.`course_id` = `courses`.`id`
 JOIN `degrees` ON `courses`.`degree_id` = `degrees`.`id`
 JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
-ORDER BY `degrees`.`name` 
+ORDER BY `degrees`.`name`; 
 
 ## 6. Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
 
